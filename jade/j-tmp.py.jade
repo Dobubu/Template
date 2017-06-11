@@ -1,0 +1,29 @@
+include j-mixin.py.jade
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    block webtitle
+     title helloJade
+    link(rel="Shortcut Icon" type="image/x-icon" href="../images/logo-s.ico")
+    meta(name="keywords" content="")
+    meta(name="description" content="")
+    meta(name="author" content="dorathy")
+    meta(name="copyright" content="© 2017 xxx")
+    meta(http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1")
+    meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+
+    +link('http://google.com','google','btn')
+    +csslink('../css/reset.css')
+    +csslink('../css/jall.css')
+  body
+    include j-leftmenu.py.jade
+    .wrap
+     .header
+      block headertitle
+       h1 網站主標題
+     .content
+     .footer
+    script(src="../js/jquery-3.1.1.min.js")
+    script(src="../js/jall.js")

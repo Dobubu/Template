@@ -1,0 +1,4 @@
+mixin link(url,linkname,linkclass)
+ a(href=url,class=linkclass)=linkname
+mixin csslink(cssname)
+ link(rel="stylesheet" type="text/css" href=cssname)
